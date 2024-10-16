@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Opcional para CSS -->
+</head>
+<body>
+    <header>
+        <h1>Juan Pérez</h1>
+        <p>Desarrollador Web | Ingeniero de Software</p>
+    </header>
+
+    <section>
+        <h2>Sobre Mí</h2>
+        <p>Texto breve sobre ti.</p>
+    </section>
+
+    <section>
+        <h2>Experiencia</h2>
+        <ul>
+            <li><strong>Empresa 1:</strong> Puesto, Fechas</li>
+            <li><strong>Empresa 2:</strong> Puesto, Fechas</li>
+            <!-- Añade más si es necesario -->
+        </ul>
+    </section>
+
+    <section>
+        <h2>Educación</h2>
+        <p>Detalles sobre tu educación.</p>
+    </section>
+
+    <section>
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Habilidad 1</li>
+            <li>Habilidad 2</li>
+            <!-- Añade más habilidades si lo deseas -->
+        </ul>
+    </section>
+
+    <footer>
+        <p>Contacto: <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></p>
+    </footer>
+</body>
+</html>
