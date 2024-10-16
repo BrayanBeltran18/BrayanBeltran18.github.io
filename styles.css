@@ -10,10 +10,10 @@ body {
 
 /* Encabezado */
 header {
-    background-color: #0077b6; /* Azul profesional */
+    background-color: #0077b6;
     color: white;
-    text-align: center;
     padding: 40px 0;
+    text-align: center;
 }
 
 header h1 {
@@ -27,14 +27,16 @@ header p {
     margin-top: 10px;
 }
 
-/* Sección General */
-section {
-    margin: 40px auto;
-    padding: 20px;
+/* Contenedor general */
+.container {
     max-width: 900px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -45,34 +47,38 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Sobre mí */
-section p {
-    font-size: 1.1em;
-    line-height: 1.8;
+/* Experiencia */
+.experience .job {
+    margin-bottom: 20px;
 }
 
-/* Experiencia y Formación */
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-
-ul li strong {
+.job h3 {
+    font-size: 1.4em;
+    margin: 0;
     color: #0077b6;
 }
 
+.job p {
+    margin: 5px 0;
+}
+
 /* Formación */
-section p {
+.education p {
+    margin-bottom: 20px;
     font-size: 1.1em;
 }
 
 /* Habilidades */
-ul li:before {
+.skills {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+
+.skills li:before {
     content: "•";
     color: #0077b6;
     font-weight: bold;
@@ -87,7 +93,6 @@ footer {
     padding: 20px;
     background-color: #0077b6;
     color: white;
-    margin-top: 40px;
 }
 
 footer a {
