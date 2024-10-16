@@ -20,8 +20,6 @@
         <section>
             <h2>Sobre Mí</h2>
             <p>Soy Brayan Beltrán Calvo, un fanático de la tecnología y actualmente estudiante de 5to semestre en Ingeniería en Sistemas de Información. Con 20 años, estoy comprometido con mi crecimiento personal y profesional, y mi meta es ser parte de la innovación en el mundo tecnológico.</p>
-            <p>Una de las características que me definen es mi capacidad para adaptarme y sobresalir en diferentes entornos de trabajo. Tengo habilidad para trabajar tanto de manera independiente como en colaboración con equipos diversos. En situaciones que lo requieran, no dudo en asumir un rol de liderazgo, aprovechando mis habilidades de organización y toma de decisiones.</p>
-            <p>Parte de mi enfoque se centra en la importancia de escuchar activamente a mis compañeros de equipo. Creo firmemente que las mejores soluciones emergen cuando se fomenta un ambiente de colaboración y se consideran diferentes perspectivas.</p>
         </section>
 
         <section>
@@ -61,10 +59,111 @@
                 <li>Habilidades de comunicación</li>
             </ul>
         </section>
+
+        <!-- Nueva sección: Idiomas -->
+        <section>
+            <h2>Idiomas</h2>
+            <div class="languages">
+                <div class="language">
+                    <p>Español (Nativo)</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%;"></div>
+                    </div>
+                </div>
+                <div class="language">
+                    <p>Inglés (Intermedio avanzado)</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!-- Nueva sección: Conocimientos -->
+<section>
+    <h2>Conocimientos</h2>
+    <div class="knowledge-container">
+        <div class="knowledge-item">
+            <p>Python (básico)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="40">
+                    <div class="inner-circle">40%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>Java (medio)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="60">
+                    <div class="inner-circle">60%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>JavaScript (medio)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="60">
+                    <div class="inner-circle">60%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>HTML (medio)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="60">
+                    <div class="inner-circle">60%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>CSS (medio)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="60">
+                    <div class="inner-circle">60%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>MySQL (básico)</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="40">
+                    <div class="inner-circle">40%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="knowledge-item">
+            <p>Git, GitHub</p>
+            <div class="circle-container">
+                <div class="circle" data-percentage="70">
+                    <div class="inner-circle">70%</div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
 
     <footer>
         <p>Contacto: <a href="mailto:brayanbel18@gmail.com">brayanbel18@gmail.com</a></p>
     </footer>
+
+<!-- JavaScript para la animación de las barras circulares -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const circles = document.querySelectorAll('.circle');
+
+        circles.forEach(circle => {
+            const percentage = circle.getAttribute('data-percentage');
+            circle.style.setProperty('--percentage', percentage);
+        });
+    });
+    </script>
+
 </body>
 </html>
