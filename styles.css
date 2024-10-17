@@ -1,3 +1,21 @@
+/* Animaciones */
+.animate-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.animate-slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Estilos Generales */
 body {
     font-family: 'Roboto', sans-serif;
@@ -223,6 +241,18 @@ footer a:hover {
     --percentage: 40;
 }
 
+.circle[data-percentage="45"] {
+    --percentage: 45;
+}
+
+.circle[data-percentage="20"] {
+    --percentage: 20;
+}
+
+.circle[data-percentage="30"] {
+    --percentage: 30;
+}
+
 .circle[data-percentage="60"] {
     --percentage: 60;
 }
@@ -250,5 +280,58 @@ footer a:hover {
 
 .btn:hover {
     background-color: #005f8c;
+}
+
+/* Contacto y Redes Sociales */
+.contact-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #0077b6;
+}
+
+.contact-info i:hover{
+    color: #005f8c;
+
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+}
+
+.social-links a {
+    color: #0077b6;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #005f8c;
+}
+
+.social-links i {
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1em;
+    color: #ffffff;
 }
 
