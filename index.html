@@ -23,6 +23,62 @@
             </div>
         </div>
     </header>
+    
+
+
+<!-- Botón Proyectos con ícono -->
+<section>
+    <div class="buttons-container animate-fade-in">
+        <a href="#proyectos" class="btn" id="btn-proyectos">
+            <i class="fas fa-folder-open"></i> Proyectos
+        </a>
+    </div>
+</section>
+
+<!-- Sección para los Proyectos (oculta inicialmente) -->
+<section id="proyectos" class="animate-slide-up hidden">
+    <h2>Proyectos</h2>
+    <div class="project-list">
+        <div class="project-item">
+            <img src="PokeApi.jpg" alt="PokeAPI" class="project-img">
+            <div class="project-info">
+                <h3>PokeAPI</h3>
+                <p>Desarrollé una Pokédex en Java que muestra las imágenes y características de cada Pokémon. Utilicé la PokeAPI, una API disponible en línea, para obtener datos actualizados y dinámicos, lo que me permitió integrar información en tiempo real sobre los Pokémon en la aplicación.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="Breakout.jpg" alt="Videojuego Breakout" class="project-img">
+            <div class="project-info">
+                <h3>Videojuego Breakout</h3>
+                <p>Junto a mi equipo de trabajo desarrollé un emocionante juego de Breakout completamente en Java, recreando la clásica mecánica de romper bloques con una pelota. Implementé efectos visuales, un control fluido de la paleta y una jugabilidad desafiante para mejorar la experiencia del jugador.</p>
+            </div>
+        </div>
+        <div class="project-item">
+            <img src="RBAC.jpg" alt="RBAC" class="project-img">
+            <div class="project-info">
+                <h3>Roll-Based Access Control</h3>
+                <p>Junto con un compañero, desarrollé un sistema de control de acceso basado en roles (RBAC) utilizando Java y SQL. En este sistema, se definieron tres roles principales: administrador, doctores y pacientes. Cada rol tiene permisos específicos, donde los administradores gestionan usuarios y configuraciones, los doctores acceden a la información médica y actualizan los historiales, y los pacientes pueden consultar sus propios datos médicos. La integración de Java permitió crear una interfaz intuitiva, mientras que SQL se encargó de gestionar la base de datos para asegurar el almacenamiento y acceso adecuado a la información.</p>
+            </div>
+        </div>
+            <div class="project-item">
+                <img src="CarruseldePerritos.jpg" alt="CarruseldePerritos" class="project-img">
+                <div class="project-info">
+                    <h3>Carrusel de  Perritos</h3>
+                    <p>Desarrollé un carrusel interactivo de imágenes de perritos en el que los usuarios pueden ingresar cualquier raza de su elección. El programa, basado en JavaScript y una API de imágenes de perros, muestra fotos correspondientes a la raza seleccionada y las va rotando automáticamente cada 10 segundos. Esto permite que el usuario disfrute de una galería dinámica y continua de adorables perritos según su preferencia.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('btn-proyectos').addEventListener('click', function(event) {
+        event.preventDefault();
+        const proyectosSection = document.getElementById('proyectos');
+        proyectosSection.classList.toggle('hidden');
+        proyectosSection.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
 
     <div class="container">
         <!-- Animación en botones -->
@@ -35,7 +91,7 @@
 
         <section class="animate-slide-up">
             <h2>Sobre Mí</h2>
-            <p>Una de las características que me definen es mi capacidad para adaptarme y
+            <p>Nací el 18 de abril del 2004 en ciudad Obregón, Sonora. Una de las características que me definen es mi capacidad para adaptarme y
             sobresalir en diferentes entornos de trabajo. Tengo habilidad para trabajar tanto de
             manera independiente como en colaboración con equipos diversos.
             En situaciones que lo requieran, no dudo en asumir un rol de liderazgo,
@@ -76,14 +132,31 @@
 
         <section class="animate-fade-in">
             <h2>Habilidades</h2>
-            <ul class="skills">
-                <li>Liderazgo</li>
-                <li>Resolución de problemas</li>
-                <li>Proactividad</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación Asertiva</li>
-            </ul>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <i class="fas fa-users-cog"></i>
+                    <p>Liderazgo</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-lightbulb"></i>
+                    <p>Resolución de problemas</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-bolt"></i>
+                    <p>Proactividad</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-handshake"></i>
+                    <p>Trabajo en equipo</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-comments"></i>
+                    <p>Comunicación Asertiva</p>
+                </div>
+            </div>
         </section>
+        
+        
 
         <!-- Nueva sección: Idiomas -->
         <section class="animate-slide-up">
@@ -178,6 +251,29 @@
                     <div class="inner-circle">30%</div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Nueva sección: Intereses -->
+<section class="animate-fade-in">
+    <h2>Intereses</h2>
+    <div class="interests-container">
+        <div class="interest-item">
+            <i class="fas fa-futbol"></i>
+            <p>Fútbol</p>
+        </div>
+        <div class="interest-item">
+            <i class="fas fa-film"></i>
+            <p>Películas</p>
+        </div>
+        <div class="interest-item">
+            <i class="fas fa-tv"></i>
+            <p>Series</p>
+        </div>
+        <div class="interest-item">
+            <i class="fas fa-music"></i>
+            <p>Música</p>
         </div>
     </div>
 </section>
